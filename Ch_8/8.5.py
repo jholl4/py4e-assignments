@@ -13,4 +13,12 @@ if len(fname) < 1:
 fh = open(fname)
 count = 0
 
+for line in fh:
+    if "From:" not in line:
+        continue
+    lst = line.strip().split()
+    type(lst)
+    print(lst[1])
+    count += 1
+
 print("There were", count, "lines in the file with From as the first word")
