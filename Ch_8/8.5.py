@@ -17,7 +17,6 @@ for line in fh:
     if "From:" not in line:
         continue
     lst = line.strip().split()
-    type(lst)
     print(lst[1])
     count += 1
 
