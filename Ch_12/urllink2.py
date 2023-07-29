@@ -73,7 +73,7 @@ for tag in tags:
     except:
         print(f"Could not process {tag.name}")
     
-    # Look at the parts of a tag
+    # Look at the parts of a tag (this is from the original example code)
     # if tag.name == "span":
         # print('TAG:', tag)
         # print('URL:', tag.get('href', None))
