@@ -50,16 +50,6 @@ ctx.verify_mode = ssl.CERT_NONE
 url = input('Enter - ')
 count = int(input("Enter count: "))
 pos = input("Enter position: ")
-# tagList = []
-
-# html = urllib.request.urlopen(url, context=ctx).read()
-# soup = BeautifulSoup(html, 'html.parser')
-
-# Retrieve all of the anchor tags
-# tags = soup('a')
-
-# Debug line:
-# print(tags[int(pos)-1])
 
 i = 0
 while i <= count:
@@ -70,12 +60,3 @@ while i <= count:
     link = tags[int(pos)-1]
     url = link.get('href', None)
     i += 1
-
-# for tag in tags:
-#     tagList.append(tag.get('href', None))
-#     print(tag.get('href', None))
-#     if len(tagList) == pos - 1:
-#         html = urllib.request.urlopen(tag.get('href', None))
-#         tagList = []
-#         soup = BeautifulSoup(html, 'html.parser')
-#         continue
